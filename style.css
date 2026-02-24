@@ -1,0 +1,75 @@
+header{
+    text-align: center;
+    position:fixed;
+    width:100%;
+    box-shadow: 0px 0px 5px;
+    background-color: rgb(250, 216, 255);
+    padding:10px;
+}
+
+header img{
+    height : 100px;
+}
+
+body{
+    margin:0;
+    font-family: 'Chonburi';
+}
+
+nav a{
+    font-family: 'Chonburi';
+    padding: 5px 15px;
+    color: rgb(255, 77, 175);
+    text-decoration: none;
+    border-radius: 0px 0px 15px 15px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color:white;
+    background-image: linear-gradient(90deg,rgba(0, 242, 206, 1) 0%, rgba(255, 255, 0, 1) 100%, rgba(237, 221, 83, 1) 100%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 5px 5px 4px -2px rgb(158, 250, 173);
+    transition: 0.3s;
+}
+
+.deskripsihome{
+    width : 40%;
+    font-size: 20px;
+    margin-left: 50px;
+    & h1{
+        color:rgb(255, 1, 128);
+    }
+    & h3{
+        color:rgb(0, 207, 62);
+    }
+    & p{
+        color:rgb(255, 255, 255);
+    }
+}
+
+.deskripsihome a{
+    text-decoration: none;
+    color:deeppink;
+    background-color: lightpink;
+    padding:10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 3px 5px -2px rgb(204, 4, 104);
+    border: 1px rgb(255, 96, 144) solid;
+}
+
+.deskripsihome a:hover{
+    box-shadow:5px 5px 10px -2px rgb(158, 250, 173);
+    border: none;
+    color:white;
+    transition: 0.3s;
+    background-image: linear-gradient(90deg,rgba(0, 242, 206, 1) 0%, rgba(255, 255, 0, 1) 100%, rgba(237, 221, 83, 1) 100%);
+}   
+
+.home{
+    background-image: url("Gemini_Generated_Image_2k24442k24442k24.png");
+    height: 800px;
+    background-size: cover;
+    padding-top: 50px;
+}
+
