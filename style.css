@@ -73,3 +73,22 @@ nav a:hover{
     padding-top: 50px;
 }
 
+.about{
+    height: 800px;
+    background-color:  rgb(255, 141, 160);
+
+}
+
+.containerAbout{
+    background-color: #FFF7CD;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    height: 100%;
+    padding: 50px 20px;
+}
+
+.containerAbout img{
+    height: 200px;
+    border-radius: 15px 15px 15px 15px;
+}
