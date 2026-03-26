@@ -1,14 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     position:fixed;
-    width:100%;
+    width: 100%;
     box-shadow: 0px 0px 5px;
     background-color: rgb(252, 169, 255);
     padding:10px;
+    box-sizing: border-box; 
+    left: 0;
+    top: 0;
+    flex-wrap: nowrap;
 }
 
+.logo-container {
+    display: flex; 
+    align-items: center;
+    
+}
+
+.logo-header {
+    height: 50px;
+    width: auto;
+    margin-right: 15px; 
+}
+
+.logotitle {
+    margin: 0; 
+    color: #be0049; 
+    
+}
 header img{
-    height : 100px;
+    height: 50px;
+    width: auto;
 }
 
 body{
@@ -16,19 +44,23 @@ body{
     font-family: 'Chonburi';
 }
 
+.menu-icon {
+    padding-right: 5%;
+}
+
 nav a{
     font-family: 'Chonburi';
     padding: 5px 15px;
     color: rgb(255, 77, 175);
     text-decoration: none;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     transition: 0.3s;
 }
 nav a:hover{
     color:white;
     background-image: linear-gradient(90deg,rgba(0, 242, 206, 1) 0%, rgba(255, 255, 0, 1) 100%, rgba(237, 221, 83, 1) 100%);
     background-color: rgb(255, 255, 255);
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     box-shadow: 5px 5px 4px -2px rgb(158, 250, 173);
     transition: 0.3s;
 }
@@ -37,17 +69,18 @@ nav a:hover{
     width : 40%;
     font-size: 20px;
     margin-left: 50px;
-    & h1{
-        color:rgb(255, 1, 128);
-    }
-    & h3{
-        color:rgb(0, 207, 62);
-    }
-    & p{
-        color:rgb(204, 4, 104);;
-    }
 }
-
+h1{
+    color:rgb(255, 1, 128);
+  
+    }
+h3{
+    color:rgb(0, 207, 62);
+    }
+p{
+    color:rgb(204, 4, 104);;
+    }
+    
 .deskripsihome a{
     text-decoration: none;
     color:deeppink;
@@ -72,17 +105,32 @@ nav a:hover{
     height: 800px;
     background-size: cover;
     padding-top: 50px;
+
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 212, 220) 100%), 
+        url('Gemini_Generated_Image_2k24442k24442k24.png');
 }
 
 .about{
-    height: 570px;
+    height: 600px;
     background-color:  rgb(255, 141, 160);
+    background-image: url("aboutbg.png");
+    background-size: cover;
+    padding-top: 50px;
+
+    background-image: 
+        linear-gradient(to top, rgba(255, 255, 255, 0) 70%,  rgb(255, 212, 220) 100%), 
+        linear-gradient(to bottom, rgba(255, 224, 236, 0) 70%, rgb(255, 224, 236) 100%),
+        url('aboutbg.png');
+        
+    background-position: center;
 }
 
 .containerAbout{
     background-color: #feffb0;
     width: 50%;
     margin-left: 25%;
+    
     text-align: center;
     height: 75%;
     padding: 50px 20px;
@@ -90,8 +138,8 @@ nav a:hover{
     & h3{
         color:green;
     }
-    border-radius: 0px 0px 15px 15px;
-    box-shadow: 0px 0px 15px rgb(255, 141, 160);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
 
 }
 
@@ -104,15 +152,12 @@ nav a:hover{
 section.howto{
     height: 900px;
     padding-top: 100px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: rgb(255, 224, 236);
 }
 .howto img{
     height: 500px;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 15px rgb(158, 255, 67);
+    box-shadow: 0px 10px 30px rgb(255, 67, 123);
 }
 .deskHowto{
     display: flex;
@@ -132,16 +177,20 @@ section.howto{
 
 .cardProfile{
     background-color: #feffb0;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,246,5,1) 0%, rgb(255, 168, 168) 100.3% );
     padding: 15px;
     width:300px;
     margin: auto;
     text-align: center;
     border-radius: 15px 15px 15px 15px;
     color:crimson;
+    font-size: 25px;
+    box-shadow: 0px 0px 25px 5px rgb(255, 255, 255);
 }
 .imgProfile img{
     width:60%;
     border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 20px 4px rgb(255, 255, 255);
 }
 .medsos {
     left: 0;
@@ -157,5 +206,10 @@ section.howto{
     font-size: 24px;
 }
 section.profile{
-    background-color: rgb(255, 141, 160);
+    background-color:rgb(255, 141, 160);
+    background-image: url("profilebg.png");
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
 }
